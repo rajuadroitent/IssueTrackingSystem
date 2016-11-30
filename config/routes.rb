@@ -1,4 +1,29 @@
 Rails.application.routes.draw do
+
+  root :to => 'home#index'
+
+  get 'comment/index'
+
+  get 'comment/show'
+
+  get 'comment/create'
+
+  get 'comment/update'
+
+  get 'comment/destroy'
+
+  get 'ticket/index'
+
+  get 'ticket/show'
+
+  get 'ticket/create'
+
+  get 'ticket/update'
+
+  get 'ticket/destroy'
+
+  get 'home/index'
+
   namespace :admin do
   get 'administrator/index'
   end
@@ -87,9 +112,7 @@ Rails.application.routes.draw do
   get 'customer/create'
   end
 
-  namespace :customers do
-    post 'customer/add_comment'
-  end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

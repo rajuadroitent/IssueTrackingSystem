@@ -17,9 +17,4 @@ class Customers::CustomerController < ApplicationController
   def create
   end
 
-  def add_comment
-
-  end
-
-
 end
