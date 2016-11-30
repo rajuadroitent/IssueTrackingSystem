@@ -1,0 +1,2 @@
+module Support::SupportTeamMemberHelper
+end
